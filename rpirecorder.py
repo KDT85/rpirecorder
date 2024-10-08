@@ -13,13 +13,13 @@ cmd = [
     date + '.mp3'
     ]
 
-
+# start recording
 def rec_start():
     print("recording")
     subprocess.run(cmd)#-D hw:2,0 -d 5 -f cd test.wav -c 1
     
     
-
+# stop recording
 def rec_stop():
     subprocess.run(['pkill','arecord'])
 #p.send_signal(signal.SIGINT)
